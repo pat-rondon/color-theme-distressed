@@ -37,11 +37,11 @@
 
        ;; Searching/Highlights
        (lazy-highlight                  ((t (:background ,faint-blue))))
-       (isearch-fail                    ((t (:foreground ,red :background "white"))))
+       (isearch-fail                    ((t (:foreground "white" :background ,purple))))
        (isearch                         ((t (:background ,yellow))))
        (match                           ((t (:background ,yellow))))
        (show-paren-match                ((t (:background ,yellow))))
-       (show-paren-mismatch             ((t (:background ,purple))))
+       (show-paren-mismatch             ((t (:foreground "white" :background ,purple))))
 
        ;; Source code highlighting
        (font-lock-builtin-face          ((t (:foreground ,blue))))
@@ -59,6 +59,10 @@
        ;; Compilation
        (compilation-info                ((t (:foreground ,green :bold t))))
        (compilation-error               ((t (:foreground ,orange :bold t))))
+
+       ;; Info
+       (info-xref                       ((t (:foreground ,blue))))
+       (info-xref-visited               ((t (:foreground ,purple))))
 
        ;; magit
        (magit-diff-add                  ((t (:foreground ,green  :bold t))))
